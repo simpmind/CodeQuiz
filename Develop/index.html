@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- <div class="scores"><a href="highscores.html">View Highscores</a></div> -->
+    <button id="startPageHighscore" onclick="showHighscore()">View High Scores</button>
+
+    <!--TODO: continue here -->
+    <div class="container">
+
+      <div id="startpage">
+          <h2>Coding Quiz Challenge</h2>
+          <h2>Try to finish before time runs out!</h2>
+      <button id="startbtn">Start Code Quiz</button>
+      
+      </div>
+
+      <div id="quiz">
+          <div id="timer">Time left: </div>
+              <div id="questions"><p>Questions Placeholder</p></div>
+                  <button id="a" onclick="checkAnswer('a')">A</button>
+                  <button id="b" onclick="checkAnswer('b')">B</button>
+                  <button id="c" onclick="checkAnswer('c')">C</button>
+                  <button id="d" onclick="checkAnswer('d')">D</button>
+              <div id="result"></div>
+      </div>
+      <div id="gameover">
+
+          <div id="finalScore"></div>
+          <input type="text" size = "20" placeholder="Enter your name:" name="Name" id="player"/>
+          <button id="submitScore">Submit </button>
+      </div>
+      <div id=highscoreContainer>
+        <div id="high-scorePage">
+            <div id="highscore-header">
+                <h3>Player</h3>
+                <h3>Score</h3>
+            </div>
+            <div id = "highscore-initials"></div>
+            <div id = "highscore-score"></div>
+        </div>
+        <div id="endGameBtns">
+            <button id="playAgain" onclick="Again()">Try Again</button>
+            <button id="clearHighscore" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    </div>
+      
+      
+  </div>
+  
+  <script src="./assets/js/scores.js"></script>
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/logic.js"></script>
+  </body>
+</html>
